@@ -450,3 +450,51 @@ border: 1px solid #2F2D30;
   color: #2F2D30;
 }
 
+.vidio{
+  padding-block: 90px;
+}
+
+.video-line{
+  border-top: 1px solid hsla(0, 0%, 0%, 1);
+  background-image: url(./images/video/video-bg.png), url(./images/video/video-bg.png);
+  background-position: 100% 70%, 0% 70%;
+  background-repeat: no-repeat;
+}
+
+.vidio__box{
+  padding-block-start: 60px;
+  display: flex;
+  align-items: center;
+  padding-inline-start: 170px;
+  justify-content: center;
+  position: relative;
+}
+
+.video__player{
+  max-width: 551px;
+}
+
+.video__title{
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78px;
+  color: #2F2D30;
+  transform: rotate(-90deg);
+  position: absolute;
+  left: 0;
+  bottom: 190px;
+}
+
+.video__btn{
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #3C3030;  
+  background-color: transparent;
+  border: none;
+}
+
