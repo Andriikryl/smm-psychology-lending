@@ -245,6 +245,8 @@ li::marker{
 
 .hearo{
   position: relative;
+  padding-block-end: 60px;
+  background: linear-gradient(90deg,hsla(280, 3%, 18%, 1)    9%,#FFFFFF 6%);
 }
 
 .hearo__box{
@@ -288,7 +290,6 @@ li::marker{
 }
 
 .hearo__img{
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   clip-path: polygon(100% 0, 105% 55%, 1% 117%, 0 55%);
 }
 
@@ -333,3 +334,119 @@ border: 1px solid #2F2D30;
   position: relative;
   top: 120px;
 }
+
+
+/** =================== author **/ 
+
+.author{
+  background-color: hsla(280, 3%, 18%, 1);
+  padding-block-end: 100px;
+  position: relative;
+}
+
+.author__previe{
+  display: flex;
+  gap: 54px;
+  margin-block-end: 57px ;
+}
+
+.author__title{
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78px;
+  text-align: center;
+  color: #FFFFFF;
+  position: absolute;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+    left: -200px;
+    top: 230px;
+}
+
+.author__text{
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  color: #FFFFFF;
+}
+
+.author__info{
+  max-width: 467px;
+  padding-block-start: 82px;
+}
+
+.author__image{
+  max-width: 570px;
+  background: linear-gradient(180deg, #FFFFFF 16%, hsla(0, 0%, 85%, 1) 14%);
+  position: relative;
+  bottom: 60px;
+}
+
+.author__subinfo{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  margin-block-end: 46px;
+}
+
+.subinfo__box{
+  border: 1px solid #FFFFFF;
+  padding: 28px 20px;
+}
+
+.subinfo__box p{
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.author__sub-text{
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-block-end: 42px;
+}
+
+.author__btn-group{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.author__btn-group button:nth-child(2){
+  background-color: transparent;
+  border: 1px solid #EFEEEA;
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #EFEEEA;  
+}
+
+.author__btn-group button:nth-child(1){
+  background-color: hsla(48, 14%, 93%, 1);
+  border: none;
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2F2D30;
+}
+
