@@ -450,6 +450,8 @@ border: 1px solid #2F2D30;
   color: #2F2D30;
 }
 
+/* ============ video -section */
+
 .vidio{
   padding-block: 90px;
 }
@@ -496,5 +498,118 @@ border: 1px solid #2F2D30;
   color: #3C3030;  
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
+/*============ Course */
+
+.course{
+  background-color: hsla(280, 3%, 18%, 1);
+  padding-block-start: 80px;
+}
+
+.course__title{
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78px;
+  text-align: center;
+  color: #FFFFFF;
+  padding-block-end: 30px;
+}
+
+.course__box{
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+}
+
+.course__subtitle{
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  text-align: center;
+  color: #FFFFFF;
+  padding-block-end: 30px;
+}
+
+.course__cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 725px;
+}
+
+.course__card{
+  max-width: 333px;
+}
+
+.card__img{
+  background-color: hsla(48, 14%, 93%, 1);
+  max-width: 71px;
+  padding: 16px;
+  margin-block-end: 16px;
+}
+
+.card__title{
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 108.6%;
+  color: #FFFFFF;
+  margin-block-end: 22px;
+}
+
+.card__text{
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+}
+
+.course__post{
+max-width: 356px;
+background-color: hsla(0, 0%, 100%, 1);
+}
+
+.post-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block-start: 18px;
+  margin-block-end: 31px;
+}
+
+.post__title{
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;  
+  padding-block-end: 11px;
+}
+
+.post__sub-info{
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  padding-block-end: 17px;
+}
+
+.post-img ~ *{
+  padding-inline: 19px;
+}
+
+.course__post ul{
+  padding-block-end: 48px;
+}
