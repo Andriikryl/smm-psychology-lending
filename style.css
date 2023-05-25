@@ -613,3 +613,68 @@ background-color: hsla(0, 0%, 100%, 1);
 .course__post ul{
   padding-block-end: 48px;
 }
+
+/*================= description */
+
+.description{
+  background: linear-gradient(90deg,hsla(280, 3%, 18%, 1)    50%,#FFFFFF 6%);
+  padding-block-end: 90px;
+}
+
+.comment__title{
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 128px;
+  line-height: 155px;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+.comments__card{
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-block-end: 40px;
+}
+
+.comment{
+  background-color: hsla(0, 0%, 100%, 1);
+  max-width: 380px;
+  padding: 24px 30px;
+}
+
+.description__box{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 75px;
+}
+.work{
+  max-width: 517px;
+  padding-block-start: 100px;
+  padding-inline-start: 40px;
+}
+
+.wotk__title{
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78px;
+  text-align: center;
+  color: hsla(280, 3%, 18%, 1);
+  padding-block-end: 20px;
+}
+
+.work__text{
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #2F2D30;  
+}
+
+.work__text:nth-child(2){
+  padding-block-end: 30px;
+}
