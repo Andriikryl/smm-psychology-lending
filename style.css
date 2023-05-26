@@ -823,8 +823,80 @@ padding: 20px;
   -o-transform: rotate(90deg);
 }
 
+/*====================== Speakers */
 
 
+.speakers{
+  padding-block: 80px;
+}
+
+.speakers__title{
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78px;
+  text-align: center;
+  color: #2F2D30;
+  padding-block-end: 70px;
+}
+
+.speakers__card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-block-start: 34px;
+  padding-inline: 111px;
+  position: relative;
+}
+
+.speakers__card::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 60%;
+  border: 1px solid #000000;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+
+.speakers__box{
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.speakers__card-name{
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #2F2D30;
+  padding-block-end: 22px;
+}
+
+.speakers__img{
+  max-width: 128px;
+  padding-block-end: 22px;
+}
+
+.speakers__img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.speakers__info{
+  font-family: 'Cormorant';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #2F2D30;
+}
 
 
 
