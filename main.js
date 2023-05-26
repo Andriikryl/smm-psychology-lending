@@ -12,3 +12,13 @@ burger?.addEventListener("click", () => {
   nav.classList.toggle("nav--visible");
   logo.classList.toggle("logo-dark");
 });
+
+const modulBtn = document?.querySelectorAll(".moduls__card-btn");
+modulBtn?.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const cardContent = btn
+      .closest(".moduls__card")
+      .querySelector(".card__content");
+    cardContent.classList.toggle("expanded");
+  });
+});
