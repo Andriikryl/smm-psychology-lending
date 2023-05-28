@@ -2,7 +2,9 @@
   box-sizing: border-box;
 }
 * {
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
+  outline: 1px solid tomato;
 }
 html, body {
   height: 100%;
@@ -356,15 +358,18 @@ border: 1px solid #2F2D30;
 
 .author__previe{
   display: flex;
+  flex-wrap: wrap;
   gap: 54px;
   margin-block-end: 57px ;
 }
+
+
 
 .author__title{
   font-family: 'Cormorant';
   font-style: normal;
   font-weight: 700;
-  font-size: 64px;
+  font-size: clamp(20px, 5vw + 2rem, 64px);
   line-height: 78px;
   text-align: center;
   color: #FFFFFF;
@@ -460,6 +465,27 @@ border: 1px solid #2F2D30;
   color: #2F2D30;
 }
 
+@media (max-width:1100px) {
+  .author__image{
+    margin-inline: auto;
+  }
+  .author__info{
+    max-width: max-content;
+    margin-inline: auto;
+    padding-block-start: 10px;
+  }
+  .author__title{
+    position: relative;
+    transform: none;
+    left: 0;
+    top: 0;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+}
+}
+
 /* ============ video -section */
 
 .vidio{
@@ -511,6 +537,25 @@ border: 1px solid #2F2D30;
   cursor: pointer;
 }
 
+@media (max-width: 1125px) {
+  .vidio__box{
+    flex-direction: column;
+    padding: 0;
+    gap: 25px;
+  }
+
+  .video__title{
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+}
+}
+
 /*============ Course */
 
 .course{
@@ -532,6 +577,7 @@ border: 1px solid #2F2D30;
 .course__box{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 45px;
 }
 
@@ -551,6 +597,12 @@ border: 1px solid #2F2D30;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   max-width: 725px;
+}
+
+@media (max-width:730px) {
+  .course__cards{
+    max-width: max-content;
+  }
 }
 
 .course__card{
@@ -635,7 +687,8 @@ background-color: hsla(0, 0%, 100%, 1);
   font-family: 'Cormorant';
   font-style: normal;
   font-weight: 700;
-  font-size: 128px;
+  text-align: center;
+  font-size: clamp(20px, 5vw + 2rem, 128px);
   line-height: 155px;
   color: rgba(255, 255, 255, 0.1);
 }
@@ -650,7 +703,8 @@ background-color: hsla(0, 0%, 100%, 1);
 .comment{
   background-color: hsla(0, 0%, 100%, 1);
   max-width: 380px;
-  padding: 24px 30px;
+  padding-inline: clamp(14px, 5vw + 1rem, 30px); 
+  padding-block: clamp(12px, 5vw + 1rem, 14px);
   position: relative;
 }
 
@@ -691,7 +745,7 @@ background-color: hsla(0, 0%, 100%, 1);
 }
 .work{
   max-width: 517px;
-  padding-block-start: 100px;
+  padding-block-start: clamp(20px, 5vw + 2rem, 100px);
   padding-inline-start: 40px;
 }
 
@@ -719,6 +773,15 @@ background-color: hsla(0, 0%, 100%, 1);
   padding-block-end: 30px;
 }
 
+@media (max-width:1020px) {
+  .description{
+    background: linear-gradient(180deg,hsla(280, 3%, 18%, 1) 50%,#FFFFFF 6%);
+  }
+  .work{
+    padding-inline-start: 0px;
+  }
+}
+
 /* =========== Modulus */
 
 .moduls{
@@ -740,6 +803,15 @@ background-color: hsla(0, 0%, 100%, 1);
 .moduls__box{
   column-count: 2;
   column-gap: 25px;
+}
+
+@media (max-width:800px) {
+  .moduls__box{
+    column-count: 1;
+  }
+  .moduls__card{
+    margin-inline: auto;
+  }
 }
 
 .moduls__card{
@@ -846,7 +918,7 @@ padding: 20px;
   flex-direction: column;
   align-items: center;
   padding-block-start: 34px;
-  padding-inline: 111px;
+  padding-inline: clamp(20px, 5vw + 2rem, 111px);
   position: relative;
 }
 
@@ -865,6 +937,7 @@ padding: 20px;
 .speakers__box{
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
@@ -937,6 +1010,7 @@ padding: 20px;
 }
 .rates__box{
   display: flex;
+  flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
 }
@@ -1018,6 +1092,7 @@ padding: 20px;
 
 .qa__box{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -1071,6 +1146,16 @@ top: 100px;
   margin: 10px;
 }
 
+@media (max-width:930px) {
+  .qa__info{
+    order: 2;
+    margin-block-end: 100px;
+  }
+  .qa__image{
+    order: 1;
+  }
+}
+
 /*======================== footer*/
 
 .footer{
@@ -1082,11 +1167,13 @@ top: 100px;
 .footer__box{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
 }
 
 .footer__list{
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
