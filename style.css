@@ -4,7 +4,6 @@
 * {
   margin: 0px;
   padding: 0px;
-  outline: 1px solid tomato;
 }
 html, body {
   height: 100%;
@@ -345,6 +344,18 @@ border: 1px solid #2F2D30;
   transform: rotate(-90deg);
   position: relative;
   top: 120px;
+}
+
+@media (max-width: 1430px) {
+    .hearo{
+      background:#FFFFFF ;
+    }
+}
+
+@media (max-width:1200px) {
+    .hearo__social{
+      display: none;
+    }
 }
 
 
@@ -778,7 +789,7 @@ background-color: hsla(0, 0%, 100%, 1);
     background: linear-gradient(180deg,hsla(280, 3%, 18%, 1) 50%,#FFFFFF 6%);
   }
   .work{
-    padding-inline-start: 0px;
+    padding-inline: 15px;
   }
 }
 
@@ -945,7 +956,7 @@ padding: 20px;
   font-family: 'Cormorant';
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: clamp(18px, 2vw + 1rem, 36px);
   line-height: 44px;
   color: #2F2D30;
   padding-block-end: 22px;
